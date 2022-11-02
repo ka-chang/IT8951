@@ -67,10 +67,10 @@ class AutoDisplay:
     def _set_rotate(self, rotate):
 
         methods = {
-            None   : Image.Transpose.FLIP_LEFT_RIGHT,
-            'CW'   : Image.Transpose.TRANSPOSE,
-            'CCW'  : Image.Transpose.TRANSVERSE,
-            'flip' : Image.Transpose.FLIP_TOP_BOTTOM,
+            None   : Image.FLIP_LEFT_RIGHT,
+            'CW'   : Image.TRANSPOSE,
+            'CCW'  : Image.TRANSVERSE,
+            'flip' : Image.FLIP_TOP_BOTTOM,
         }
 
         if rotate not in methods:
